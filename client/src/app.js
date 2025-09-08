@@ -1,6 +1,6 @@
 console.log("HELLO!")
 
-const characterForm = document.getElementById("character");
+const characterForm = document.getElementById("form");
 
 characterForm.addEventListener("submit", handleSubmit);
 
@@ -40,6 +40,13 @@ async function getAndDisplayReviews() {
 
     characterDiv.innerHTML = `
         <p>Name: ${character.name}</p>
+        <p>Age: ${character.age}</p>
+        <p>Gender: ${character.gender}</p>
+        <p>Class: ${character.class}</p>
+        <p>Race: ${character.race}</p>
+        <p>Background: ${character.background}</p>
+        <p>Alignment: ${character.alignment}</p>
+        <p>Other: ${character.other}</p>
     `;
 
     characterContainer.appendChild(characterDiv);
