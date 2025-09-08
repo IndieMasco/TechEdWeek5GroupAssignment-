@@ -1,5 +1,6 @@
 import express from "express";
 import cors from "cors";
+import { db } from "./dbConnection.js";
 
 const app = express();
 app.use(cors());
@@ -12,4 +13,27 @@ app.listen(PORT, function () {
 
 app.get("/", function (req, res) {
   res.json({ message: "Welcome to the server. GET comfy" });
+});
+
+app.get("/character", async function (req, res) {
+  const query = await db.query(`SELECT * FROM character`);
+  res.json(query.rows);
+});
+
+app.post("/add-character", (req, res) => {
+  const newCharacter = req.body;
+  const query = db.query(
+    `INSERT INTO character (name, age, gender, class, race, background, alignment, other) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)`,
+    [
+      newCharacter.formValues.name,
+      newCharacter.formValues.age,
+      newCharacter.formValues.gender,
+      newCharacter.formValues.class,
+      newCharacter.formValues.race,
+      newCharacter.formValues.background,
+      newCharacter.formValues.alignment,
+      newCharacter.formValues.other,
+    ]
+  );
+  res.json("Data sent", query);
 });

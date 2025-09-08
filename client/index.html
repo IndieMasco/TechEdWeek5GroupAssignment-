@@ -4,10 +4,37 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <script type="module" src="./src/app.js" defer ></script>
+    <title>Week 5 Group Assignment</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <h1>THIS IS A PLACEHOLDER</h1>
+
+    <section class="form-section">
+      <form id="form">
+          <label for="fullname">Name:</label>
+          <input type="text" name="name" required placeholder="#" />
+          <label for="petname">Age:</label>
+          <input type="number" name="age" required placeholder="#" />
+          <label for="petname">Gender:</label>
+          <input type="text" name="gender" required placeholder="#" />
+          <label for="petname">Class:</label>
+          <input type="text" name="class" required placeholder="#" />
+          <label for="petname">Race:</label>
+          <input type="text" name="race" required placeholder="#" />
+          <label for="petname">Background:</label>
+          <input type="text" name="background" required placeholder="#" />
+          <label for="petname">Alignment:</label>
+          <input type="text" name="alignment" required placeholder="#" />
+          <label for="petname">Other:</label>
+          <textarea type="text" name="other" required placeholder="#"></textarea>
+      </form>
+    </section>
+
+    <h2 class="character-header">Characters</h2>
+    <div class="character-wrapper">
+      <div id="character-container"></div>
+    </div>
   </body>
 </html>
