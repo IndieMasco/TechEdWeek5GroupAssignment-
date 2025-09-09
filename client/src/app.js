@@ -17,12 +17,12 @@ function handleSubmit(event) {
     "Content-Type": "application/json",
     },
     body: JSON.stringify({ formValues }),
-    }).then((response) => {
-    if (response.ok) {
-    window.location.reload();
-    } else {
-        console.error("Failed to submit the review.");
-    }
+    // }).then((response) => {
+    // if (response.ok) {
+    // window.location.reload();
+    // } else {
+    //     console.error("Failed to submit the review.");
+    // }
     });
 }
 
@@ -54,3 +54,32 @@ async function getAndDisplayReviews() {
 }
 
 getAndDisplayReviews();
+
+// ==== ITEM GENERATOR ====
+
+async function getAndDisplayRandomItem() {
+    //When deploying to render, will need to write in the QUERY to handle that. For now, Localhost will be used
+    const response = await fetch(
+    "https://localhost:8080/randomitem"
+    );
+    const reviews = await response.json();
+
+    const itemContainer = document.getElementById("item-container");
+
+
+    items.forEach((item) => {
+    const itemDiv = document.createElement("div");
+    itemDiv.classList.add("item-card");
+
+    itemDiv.innerHTML = `
+        <p>${item}</p>
+        <p>${itemInfo}</p>
+    `;
+
+    itemContainer.appendChild(itemDiv);
+    });
+}
+
+
+
+getAndDisplayRandomItem();
