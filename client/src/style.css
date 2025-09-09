@@ -1,5 +1,52 @@
 @import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
 
 body {
-  background-color: turquoise;
+  background: radial-gradient(
+    circle,
+    rgba(36, 135, 14, 1) 10%,
+    rgba(168, 168, 168, 1) 71%,
+    rgba(0, 0, 0, 1) 100%
+  );
+
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  align-content: center;
+  text-align: center;
+}
+
+.form-section {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  align-content: center;
+  text-align: center;
+}
+
+#form {
+  font-size: 20px;
+}
+
+.character-wrapper {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  align-content: center;
+  text-align: center;
 }
