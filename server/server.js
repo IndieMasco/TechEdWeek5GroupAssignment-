@@ -16,7 +16,7 @@ app.get("/", function (req, res) {
 });
 
 app.get("/character", async function (req, res) {
-  const query = await db.query(`SELECT * FROM character ORDER BY id DESC`);
+  const query = await db.query(`SELECT * FROM character`);
   res.json(query.rows);
 });
 
