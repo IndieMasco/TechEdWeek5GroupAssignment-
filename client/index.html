@@ -1,16 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css">
-    <script type="module" src="./src/app.js" defer ></script>
+    <link rel="stylesheet" href="./src/style.css" />
+    <script type="module" src="./src/app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Week 5 Group Assignment</title>
   </head>
   <body>
-
-    <h1>THIS IS A PLACEHOLDER</h1>
+    <h1>Character Creation Community</h1>
 
     <div>
       <p>Hail, traveler, and well met! The road has been long and the world is dark. What tidings bring you to the (inn name)? Enter, and find refuge from the biting wind and the creeping dread of the wilds. A warm meal and a soft bed await you; speak your name, and I shall see you made comfortable for the night.</p>
@@ -18,24 +23,29 @@
 
     <section class="form-section">
       <form id="form">
-          <label for="name">Name:</label>
-          <input type="text" name="name" required placeholder="Tam Hopperton" />
-          <label for="age">Age:</label>
-          <input type="number" name="age" required placeholder="84" />
-          <label for="gender">Gender:</label>
-          <input type="text" name="gender" required placeholder="female" />
-          <label for="class">Class:</label>
-          <input type="text" name="class" required placeholder="High Elf" />
-          <label for="race">Race:</label>
-          <input type="text" name="race" required placeholder="Elf" />
-          <label for="background">Background:</label>
-          <input type="text" name="background" required placeholder="Noble" />
-          <label for="alignment">Alignment:</label>
-          <input type="text" name="alignment" required placeholder="Chaos" />
-          <label for="other">Other:</label>
-          <textarea type="text" name="other" required placeholder="Motivation, Motto, Bonds, Strengths, Flaws, Defining moment, Feature, Equipment, Backstory
-"></textarea>
-          <button type="submit">Submit</button>
+        <label for="name">Name:</label>
+        <input type="text" name="name" required placeholder="Tam Hopperton" />
+        <label for="age">Age:</label>
+        <input type="number" name="age" required placeholder="84" />
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" required placeholder="female" />
+        <label for="class">Class:</label>
+        <input type="text" name="class" required placeholder="High Elf" />
+        <label for="race">Race:</label>
+        <input type="text" name="race" required placeholder="Elf" />
+        <label for="background">Background:</label>
+        <input type="text" name="background" required placeholder="Noble" />
+        <label for="alignment">Alignment:</label>
+        <input type="text" name="alignment" required placeholder="Chaos" />
+        <label for="other">Other:</label>
+        <textarea
+          type="text"
+          name="other"
+          required
+          placeholder="Motivation, Motto, Bonds, Strengths, Flaws, Defining moment, Feature, Equipment, Backstory
+"
+        ></textarea>
+        <button type="submit">Submit</button>
       </form>
     </section>
 
@@ -55,10 +65,16 @@
       <div id="character-container"></div>
     </div>
 
-<!-- PDF -->
- <form>
-<p>Download a blank character sheet here: <button formaction="https://media.wizards.com/2016/dnd/downloads/5E_CharacterSheet_Fillable.pdf" >Downloadable PDF</button></p>
-</form>
-
+    <!-- PDF -->
+    <form>
+      <p>
+        Download a blank character sheet here:
+        <button
+          formaction="https://media.wizards.com/2016/dnd/downloads/5E_CharacterSheet_Fillable.pdf"
+        >
+          Downloadable PDF
+        </button>
+      </p>
+    </form>
   </body>
 </html>
