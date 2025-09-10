@@ -17,12 +17,12 @@ function handleSubmit(event) {
     "Content-Type": "application/json",
     },
     body: JSON.stringify({ formValues }),
-    // }).then((response) => {
-    // if (response.ok) {
-    // window.location.reload();
-    // } else {
-    //     console.error("Failed to submit the review.");
-    // }
+    }).then((response) => {
+    if (response.ok) {
+    window.location.reload();
+    } else {
+        console.error("Failed to submit the review.");
+    }
     });
 }
 
