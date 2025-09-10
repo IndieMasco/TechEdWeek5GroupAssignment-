@@ -53,21 +53,12 @@ h1 {
   justify-items: center; 
 }
 
-
 #form label,
 #form input,
 #form textarea,
 #form button {
   width: 100%;
-  max-width: 400px;
-  
-.usefulLinks {
-  grid-column-start: 2;
-  grid-column-end: 5;
-  grid-row-start: 5;
-  grid-row-end: 6;
-
-}
+  max-width: 400px;}
 
 .character-card,
 .item-card {
