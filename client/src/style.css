@@ -87,6 +87,10 @@ h1 {
 }
 
 .usefulLinks {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
 }
 
 media-query {
