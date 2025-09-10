@@ -26,33 +26,55 @@
     <section class="form-section">
       <form id="form">
         <label for="name">Name:</label>
-        <input type="text" name="name" required placeholder="Tam Hopperton" />
+        <input type="text" name="name" required placeholder="Tam Hopperton" aria-label="Enter character name here" />
         <label for="age">Age:</label>
-        <input type="number" name="age" required placeholder="84" />
+        <input type="number" name="age" required placeholder="84" aria-label="Enter age here" />
         <label for="gender">Gender:</label>
-        <input type="text" name="gender" required placeholder="female" />
+        <input type="text" name="gender" required placeholder="female" aria-label="Enter gender here" />
         <label for="class">Class:</label>
-        <input type="text" name="class" required placeholder="High Elf" />
+        <input type="text" name="class" required placeholder="High Elf" aria-label="Enter class of character here, for example; high elf" />
         <label for="race">Race:</label>
-        <input type="text" name="race" required placeholder="Elf" />
+        <input type="text" name="race" required placeholder="Elf" aria-label="Enter race, for example; Elf"/>
         <label for="background">Background:</label>
-        <input type="text" name="background" required placeholder="Noble" />
-        <label for="alignment">Alignment:</label>
-        <input type="text" name="alignment" required placeholder="Chaos" />
+        <input type="text" name="background" required placeholder="Noble" aria-label="Enter character background here, for example; noble" />
+        <label for="alignment">Moral Alignment:</label>
+        <input type="text" name="alignment" required placeholder="Chaos" aria-label="Enter your character's moral alignment here, for example; chaos" />
         <label for="other">Other:</label>
         <textarea
           type="text"
           name="other"
           required
-          placeholder="Motivation, Motto, Bonds, Strengths, Flaws, Defining moment, Feature, Equipment, Backstory
-"
-        ></textarea>
-        <button type="submit">Submit</button>
+          placeholder="Motivation, Motto, Bonds, Strengths, Flaws, Defining moment, Features, Equipment, Backstory
+" aria-label="Enter other information here, for example; motivation, motto, bonds, strengths, flaws, defining moment, features, equipment, backstory"></textarea>
+        <button type="submit" aria-label="Submit Button">Submit</button>
       </form>
     </section>
-
+    
+     <!-- Items -->
+      <div class="item-wrapper">
+        <div class ="summon">
+     <p class="item-header">Generate a random, magical item here:</h3>
+     <div id="item-container"></div>
+ <button id="itemButton" aria-label="Button for generating a random magical item" type="button">Summon</button>
+ <br>
+      <form>
+      <p class="Downloadable">
+        Download a blank character sheet here:
+        <button formaction="https://media.wizards.com/2016/dnd/downloads/5E_CharacterSheet_Fillable.pdf"
+        aria-label="Downlad button for blank character sheet"> Downloadable PDF </button>
+      </p>
+    </form>
+  </div>
+    <!-- Weapons -->
+    <!-- this is what steph is working on -->
+  
+    <!-- Spotify -->
+<div class= "spotify"><p>Looking for some background music to your adventurers? Check out our curated playlist. We also recommend:
+  <a href=https://open.spotify.com/user/bezoing/playlists>Brian Davis' Atmosphere, mood and setting playlists</a></p>
+<iframe id="Sp data-testid="embed-iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2nSzEksQl8F2cNOsSKqWCb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+</div>
       <!-- Items -->
-      <h3 class="item-header">Summon an Item</h3>
+      <h2 class="item-header">Summon an Item</h3>
       <div class="item-wrapper">
       <div id="item-container">
         <form>
@@ -66,7 +88,7 @@
   <iframe id="Spotify" data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2nSzEksQl8F2cNOsSKqWCb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
     <!-- INFO WE ARE PULLING FOR CHARACTER -->
-    <h2 id="immersive" class="character-header">Feel free to introduce yourself to the other travelers. You're all taking
+    <h3 id="immersive" class="character-header">Feel free to introduce yourself to the other travelers. You're all taking
       shelter from the biting wind and the creeping dread of the wilds</h2>
     <div class="character-wrapper">
       <div id="character-container"></div>
@@ -74,36 +96,29 @@
 
 
     <!-- PDF -->
-    <form>
-      <p class="Downloadable">
-        Download a blank character sheet here:
-        <button
-          formaction="https://media.wizards.com/2016/dnd/downloads/5E_CharacterSheet_Fillable.pdf"
-        >
-          Downloadable PDF
-        </button>
-      </p>
-    </form>
+    
 
 
     <!-- USEFUL LINKS -->
   
-    <h3 class="links-header">Useful Links</h3>
+    
     <div class="links-wrapper">
-      <div id="links-container">
+      <h4 class="links-header">Useful Links</h3>
+        <div id="links-container">
           <p>Below is a few of our personal favourite tools for creating characters, having them on the go, and map-making</p>
 <section class="usefulLinks">
 <!-- Build a character Video -->
-<p><a href="https://www.dicebreaker.com/games/dungeons-and-dragons-5e/how-to/how-make-dnd-character-for-beginners">How To Build a character Video</a></p>
+<p><a href="https://www.dicebreaker.com/games/dungeons-and-dragons-5e/how-to/how-make-dnd-character-for-beginners" aria-label="Link to a video on how to build a character">How To Build a character Video</a></p>
 
 <!-- Ios Character app -->
-<p><a href="https://apps.apple.com/us/app/fifth-edition-character-sheet/id967650851">iPhone character sheet app</a></p>
+<p><a href="https://apps.apple.com/us/app/fifth-edition-character-sheet/id967650851" aria-label="Link to an iPhone character sheet app">iPhone character sheet app</a></p>
 
 <!-- Android Character app -->
-<p><a href="https://play.google.com/store/apps/details?id=com.wgkammerer.testgui.basiccharactersheet.app&hl=en">Android character sheet app</a></p>
+<p><a href="https://play.google.com/store/apps/details?id=com.wgkammerer.testgui.basiccharactersheet.app&hl=en" aria-label="Link to an Android character sheet app">Android character sheet app</a></p>
 
 <!-- Dungeon web app -->
-<p><a href="https://donjon.bin.sh/5e/dungeon/">Dungeon Map Creator Tool</a></p>
+<p><a href="https://donjon.bin.sh/5e/dungeon/" aria-label="Link to a dungeon map creater tool">Dungeon Map Creator Tool</a></p>
+     </section> 
     </section>
       </div>
     </div> 

@@ -3,13 +3,14 @@
 body {
   background: radial-gradient(
     circle,
-    rgb(44, 164, 17) 10%,
-    rgba(168, 168, 168, 1) 71%,
-    rgba(0, 0, 0, 1) 100%
+    rgba(34, 139, 34, 1) 55%,
+    rgba(13, 1, 1, 1) 100%
   );
+  background-attachment: fixed;
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
   font-weight: bold;
+  color: white;
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -29,13 +30,27 @@ h1 {
 .form-section,
 #immersive,
 .character-wrapper,
-.links-wrapper,
-.item-wrapper {
+.links-wrapper {
   grid-column: 2;
-  margin: 10px 0;
+  margin: 10px;
   border-color: olive;
   border-style: inset;
   border-width: 8px;
+  text-align: center;
+  padding: 20px;
+}
+
+#immersive {
+  font-weight: bold;
+}
+
+.item-wrapper,
+.summon {
+  grid-column: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  margin: 10px 0;
+  border: olive, inset, 8px;
   text-align: center;
   padding: 20px;
 }
@@ -44,6 +59,10 @@ h1 {
   overflow-y: scroll;
   width: 990px;
   height: 400px;
+}
+
+input {
+  font-weight: lighter;
 }
 
 #form {
@@ -67,3 +86,9 @@ h1 {
   padding: 10px;
   margin-bottom: 10px;
 }
+
+h4 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
