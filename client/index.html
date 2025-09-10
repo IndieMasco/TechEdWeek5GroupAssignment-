@@ -17,8 +17,14 @@
   <body>
     <h1>Character Creation Community</h1>
 
-    <div>
-      <p>Hail, traveler, and well met! The road has been long and the world is dark. What tidings bring you to the (inn name)? Enter, and find refuge from the biting wind and the creeping dread of the wilds. A warm meal and a soft bed await you; speak your name, and I shall see you made comfortable for the night.</p>
+    <div class="intro">
+      <p>
+        Hail, traveler, and well met! The road has been long and the world is
+        dark. What tidings bring you to the (inn name)? Enter, and find refuge
+        from the biting wind and the creeping dread of the wilds. A warm meal
+        and a soft bed await you; speak your name, and I shall see you made
+        comfortable for the night.
+      </p>
     </div>
 
     <section class="form-section">
@@ -70,13 +76,29 @@
     
     <!-- THis is a stretch goal -->
 
-    <p>Feel free to introduce yourself to the other travelers. You're all taking shelter from the biting wind and the creeping dread of the wilds</p>
+    <p id="immersive">
+      Feel free to introduce yourself to the other travelers. You're all taking
+      shelter from the biting wind and the creeping dread of the wilds
+    </p>
 
 
     <h2 class="character-header">Characters List:</h2>
     <div class="character-wrapper">
       <div id="character-container"></div>
     </div>
+
+
+    <!-- PDF -->
+    <form>
+      <p class="Downloadable">
+        Download a blank character sheet here:
+        <button
+          formaction="https://media.wizards.com/2016/dnd/downloads/5E_CharacterSheet_Fillable.pdf"
+        >
+          Downloadable PDF
+        </button>
+      </p>
+    </form>
 
 
     <!-- USEFUL LINKS -->
@@ -110,6 +132,7 @@
                 <!-- Dungeon web app -->
               <p><a href="https://donjon.bin.sh/5e/dungeon/">Android character sheet app</a></p>
               https://donjon.bin.sh/5e/dungeon/
+
 
   </body>
 </html>
