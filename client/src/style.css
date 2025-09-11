@@ -57,8 +57,8 @@ h1 {
 
 .character-wrapper {
   overflow-y: scroll;
-  width: 990px;
-  height: 400px;
+  width: auto;
+  height: 100vh;
 }
 
 #form {
@@ -112,8 +112,9 @@ a:visited {
   .intro,
   .form-section,
   #immersive,
-  .character-wrapper,
-  .links-wrapper {
+  #character-container,
+  .links-wrapper,
+  .character-wrapper {
     flex-direction: column;
     padding: 10px;
   }
@@ -125,5 +126,8 @@ a:visited {
   .character-card,
   .item-card {
     width: 80%;
+  }
+
+  .character-wrapper {
   }
 }
