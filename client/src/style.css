@@ -101,7 +101,7 @@ button:hover {
 }
 
 a:hover {
-  color: red;
+  color: rgb(237, 186, 0);
 }
 
 a:visited {
