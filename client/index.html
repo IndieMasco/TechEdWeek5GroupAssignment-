@@ -17,7 +17,7 @@
   <body>
     <h1>Character Creation Community</h1>
 
-    <div class="intro">
+    <div class="intro" aria label="Site introduction, with immersive text">
       <p>Character Creation Community is a quick tool to allow players to share and view characters for creative writing & roleplaying.</p>
       <p> Having said that; </p>
       <p>Welcome traveller, sign our traveller's guestbook & tell your tale.</p>
@@ -44,26 +44,25 @@
           type="text"
           name="other"
           required
-          placeholder="Motivation, Motto, Bonds, Strengths, Flaws, Defining moment, Features, Equipment, Backstory
-" aria-label="Enter other information here, for example; motivation, motto, bonds, strengths, flaws, defining moment, features, equipment, backstory"></textarea>
+          placeholder="Motivation, Motto, Bonds, Strengths, Flaws, Defining moment, Features, Equipment, Backstory" aria-label="Enter other information here, for example; motivation, motto, bonds, strengths, flaws, defining moment, features, equipment, backstory"></textarea>
         <button type="submit" aria-label="Submit Button">Submit</button>
       </form>
     </section>
 
     <!-- Weapons -->
     <!-- this is what steph is working on -->
-     <!-- Items -->
+    <!-- Items -->
       <div class="item-wrapper">
         <div class ="summon">
-     <p class="item-header">Generate a random, magical item here:</h3>
-     <div id="item-container"></div>
+    <p class="item-header">Generate a random, magical item here:</p>
+    <div id="item-container"></div>
  <button id="itemButton" aria-label="Button for generating a random magical item" type="button">Summon</button>
  <br>
       <form>
       <p class="Downloadable">
         Download a blank character sheet here:
         <button formaction="https://media.wizards.com/2016/dnd/downloads/5E_CharacterSheet_Fillable.pdf"
-        aria-label="Downlad button for blank character sheet"> Downloadable PDF </button>
+        aria-label="Download button for blank character sheet"> Downloadable PDF </button>
       </p>
     </form>
   </div>
@@ -71,14 +70,12 @@
   
     <!-- Spotify -->
 <div class= "spotify"><p>Looking for some background music to your adventurers? Check out our curated playlist. We also recommend:
-  <a href=https://open.spotify.com/user/bezoing/playlists>Brian Davis' Atmosphere, mood and setting playlists</a></p>
-<iframe id="Sp data-testid="embed-iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2nSzEksQl8F2cNOsSKqWCb?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<a href=https://open.spotify.com/user/bezoing/playlists aria-label="Recommended Brian Davis' Atmosphere, mood and setting playlist">Brian Davis' Atmosphere, mood and setting playlists</a></p>
+<iframe id="Sp data-testid="embed-iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2nSzEksQl8F2cNOsSKqWCb?utm_source=generator" aria-label="curated story playlist" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 </div>
 
-
     <!-- INFO WE ARE PULLING FOR CHARACTER -->
-    <h3 id="immersive" class="character-header">Feel free to introduce yourself to the other travelers. You're all taking
-      shelter from the biting wind and the creeping dread of the wilds</h2>
+    <h3 id="immersive" class="character-header" aria-label="immersive text; introduce yourself to other characters">Feel free to introduce yourself to the other travelers. You're all taking shelter from the biting wind and the creeping dread of the wilds</h2>
     <div class="character-wrapper">
       <div id="character-container"></div>
     </div>
@@ -107,7 +104,7 @@
 
 <!-- Dungeon web app -->
 <p><a href="https://donjon.bin.sh/5e/dungeon/" aria-label="Link to a dungeon map creater tool">Dungeon Map Creator Tool</a></p>
-     </section> 
+  </section> 
     </section>
       </div>
     </div> 
