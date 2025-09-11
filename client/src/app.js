@@ -189,31 +189,4 @@ async function displayRandomItem() {
   itemContainer.appendChild(itemDiv);
 }
 
-// Initial call to display a random item on page load
 displayRandomItem();
-
-
-
-// async function getAndDisplayRandomItem() {
-//     //When deploying to render, will need to write in the QUERY to handle that. For now, Localhost will be used
-//     const response = await fetch(
-//     "https://localhost:8080/randomitem"
-//     );
-//     const reviews = await response.json();
-
-//     const itemContainer = document.getElementById("item-container");
-
-
-//     items.forEach((item) => {
-//     const itemDiv = document.createElement("div");
-//     itemDiv.classList.add("item-card");
-
-//     itemDiv.innerHTML = `
-//         <p>${item}</p>
-//         <p>${itemInfo}</p>
-//     `;
-
-//     itemContainer.appendChild(itemDiv);
-//     });
-
-// getAndDisplayRandomItem();
