@@ -61,10 +61,6 @@ h1 {
   height: 400px;
 }
 
-input {
-  font-weight: lighter;
-}
-
 #form {
   display: grid;
   grid-template-columns: 1fr;
@@ -99,5 +95,35 @@ h4 {
   font-weight: bolder;
 }
 
-@media query {
+button:hover {
+  background-color: olive;
+  color: white;
+}
+
+a:hover {
+  color: red;
+}
+
+a:visited {
+  color: purple;
+}
+
+@media (max-width: 800px) {
+  .intro,
+  .form-section,
+  #immersive,
+  .character-wrapper,
+  .links-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .spotify {
+    width: 80%;
+  }
+
+  .character-card,
+  .item-card {
+    width: 80%;
+  }
 }
