@@ -167,39 +167,31 @@ const items = [
 
 ];
 
-
-
 const itemButton = document.getElementById('itemButton');
-const itemContainer = document.getElementById('item-container').innerText = randomItem;
+const itemContainer = document.getElementById('item-container');
 
 itemButton.addEventListener('click', displayRandomItem);
 
-// random item endpoint
-app.get("https://techedweek5groupassignment.onrender.com/item");
-
-async function displayRandomItem(request, response) {
-const response = await fetch('https://techedweek5groupassignment.onrender.com/item');
-// const randomItem = await response.json();
-  const randomItem = items[Math.floor(Math.random() * items.length)];
-  // response.json(randomItem);
-const json = json.stringify(randomItem);
-
-    const itemContainer = document.getElementById('item-container');
-}
+async function displayRandomItem() {
+  const itemResponse = await fetch('https://techedweek5groupassignment.onrender.com/item');
+  const itemList = await itemResponse.json();
+  const randomItem = itemList[Math.floor(Math.random() * itemList.length)];
 
   const itemDiv = document.createElement("div");
   itemDiv.classList.add("item-card");
 
   itemDiv.innerHTML = `
-  <p>${randomItem.item}</p>
-    <p>${randomItem.itemInfo}</p>
-    `;
+    <p>${randomItem.item}</p>
+    <p>${randomItem.iteminfo}</p>
+  `;
 
-    itemContainer.innerHTML = '';
+  itemContainer.innerHTML = '';
+  itemContainer.appendChild(itemDiv);
+}
 
-    itemContainer.appendChild(itemDiv);
-
+// Initial call to display a random item on page load
 displayRandomItem();
+
 
 
 // async function getAndDisplayRandomItem() {
