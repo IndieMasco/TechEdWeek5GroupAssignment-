@@ -168,18 +168,23 @@ const items = [
 ];
 
 
-//Curently says 173-177 is not defined 
-const itemButton = document.querySelector('itemButton')
-const itemContainer = document.getElementById('item-container').innertext = randomItem;
 
-document.getElementById('itemButton').addEventListener('click', displayRandomItem);
+const itemButton = document.getElementById('itemButton');
+const itemContainer = document.getElementById('item-container').innerText = randomItem;
+
+itemButton.addEventListener('click', displayRandomItem);
 
 // random item endpoint
-app.get("/item", sendRandomItem);
+app.get("https://techedweek5groupassignment.onrender.com/item");
 
-function sendRandomItem(request, response) {
+async function displayRandomItem(request, response) {
+const response = await fetch('https://techedweek5groupassignment.onrender.com/item');
+// const randomItem = await response.json();
   const randomItem = items[Math.floor(Math.random() * items.length)];
-  response.json(randomItem);
+  // response.json(randomItem);
+const json = json.stringify(randomItem);
+
+    const itemContainer = document.getElementById('item-container');
 }
 
   const itemDiv = document.createElement("div");
