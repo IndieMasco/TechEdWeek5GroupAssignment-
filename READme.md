@@ -1,4 +1,4 @@
-# Tech Ed week 5 group assignment 
+# Tech Ed week 5 group assignment
 
 Consolidate your knowledge of full-stack development by designing and building a web application that showcases your skills in HTML, CSS, client-side JavaScript, server-side JavaScript with Express, and database interactions using Postgres.
 
@@ -6,9 +6,51 @@ Consolidate your knowledge of full-stack development by designing and building a
 
 ..
 
+## Requirements / User Stories
+
+#### Main Goals
+
+- ✅ 🎯 I want users to be able to submit a character idea
+- ✅ 🎯 I want to view submitted characters
+- ✅ 🎯 I want to be able to use a item generator
+- ✅ 🎯 I want to be able to download a blank character sheet
+
+#### Stretch Goals
+
+- ✅ 🏹 Spotify embed for the playlist
+- 🏹 Image pull field for any characters that people submit
+- 🏹 I want to be able to explore multiple pages
+- 🏹 I want to roll a D20 for initiative
+- 🏹 I want videos for different atmospheres (iframe)
+- 🏹 I want the cursor to be a wand (toggle)
+
 ## Wireframe
 
-..
+- overall review about the wireframe
+
+- something about this image
+
+ <div align="center">
+
+![Mobile](./GroupPlanner/WireFrame/Mobile.png)
+
+</div>
+
+- something about this image
+
+<div align="center">
+
+![DeskTop](./GroupPlanner/WireFrame/DeskTop.png)
+
+</div>
+
+- something aboout this image
+
+<div align="center">
+
+![ColourPalette](./GroupPlanner/WireFrame/ColourPalette.png)
+
+</div>
 
 ## Errors or Bugs I Encountered
 
