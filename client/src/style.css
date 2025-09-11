@@ -76,6 +76,12 @@ h1 {
   max-width: 400px;
 }
 
+#form textarea {
+  height:70px;
+  min-height: 50px;
+  max-height:200px;
+}
+
 .usefulLinks {
   grid-column-start: 2;
   grid-column-end: 5;
@@ -130,4 +136,12 @@ a:visited {
 
   .character-wrapper {
   }
+}
+
+footer {
+  padding-top:10px;
+}
+
+textarea { 
+resize: vertical; 
 }
