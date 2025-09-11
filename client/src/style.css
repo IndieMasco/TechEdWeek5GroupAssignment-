@@ -77,8 +77,15 @@ input {
 #form textarea,
 #form button {
   width: 100%;
-  max-width: 400px;}
+  max-width: 400px;
+}
 
+.usefulLinks {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
 
 .character-card,
 .item-card {
@@ -92,3 +99,5 @@ h4 {
   font-weight: bolder;
 }
 
+@media query {
+}
