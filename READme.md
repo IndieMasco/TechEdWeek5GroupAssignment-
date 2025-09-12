@@ -89,6 +89,11 @@ Consolidate your knowledge of full-stack development by designing and building a
 
 </div>
 
+# Lighthouse reports
+
+[Mobile](https://drive.google.com/file/d/1RjblS_NVuHJCFUTQYLmBshTLG_NB5DYk/view?usp=sharing)
+[Desktop](https://drive.google.com/file/d/1vqSVbRvewjWe3uIAqC-Agtl1pE8Yiutt/view?usp=sharing)
+
 ## Reflections:
 
 Steph created the item generator, which proved to be a point of frustration due to formatting impeding progress there, trying multiple different ways to pull the item generator together, only to realise that it was a single misplaced capital letter that was causing the issue.
