@@ -89,13 +89,27 @@ Consolidate your knowledge of full-stack development by designing and building a
 
 </div>
 
-## Errors or Bugs I Encountered
+## Reflections:
 
-..
+Steph created the item generator, which proved to be a point of frustration due to formatting impeding progress there, trying multiple different ways to pull the item generator together, only to realise that it was a single misplaced capital letter that was causing the issue.
 
-## What went really well and what could have gone better?
+We had an initial blocker with how each member of the team has a different method of working, how they like their plans to be laid out and viewed, which lead to some tension, but the days after I believe we have a much greater understanding of one another, and really excelled going forward. 
 
-..
+The team worked efficiently both in person, and remotely, supplying one another with tools, resources, and programs we might need for one another’s tasks, showing a great level of conscientiousness for all tasks and team members rather than being locked in to one’s’ own.
+
+Steph was very grateful of Sam’s understanding of Render/Supabase following the headaches she had in the previous assignment, allowing this to be created quickly and easily, and any troubleshooting there was very quickly resolved. Corinna’s passion for accessibility both in terms of functions as ARIA labels and how the website content and layout is accessible, covering readability and how easy it is for first timers to use.
+
+Steph’s eye for detail in little formatting tweaks for user experience came in beneficial as we carried out the final tweaks of the website with the time we had left. The whole team seemed to have a lot of fun with this project as a whole given the roleplaying gamer mindset of Sam and Steph and Corinna’s creative writing background, and being able to all input into the creative assets of the characters and having a collaborative playlist together on Spotify for the website made this quite a fun endeavour.
+
+Whilst we originally tailored this to have more creative writing elements and had to scale back for time, we have schemed ideas, functions, and other things we could implement to this into the future to be a full creative content companion app for the game table and at the writer’s desk, especially for folks on the move. This foresight could make fantastic groundwork for a week 12 project.
+
+## References:
+NVDA screen reader: https://www.nvaccess.org/download/
+W3C https://www.w3.org/
+W3Schools https://www.w3schools.com/ 
+StackOverflow  https://stackoverflow.com/questions
+MDN - https://developer.mozilla.org/en-US/ 
+SheCodes - http://shecodes.io/ 
 
 ## External sources
 
@@ -110,5 +124,3 @@ Consolidate your knowledge of full-stack development by designing and building a
 #### Downloadable PDF
 
 [Link A Webpage Button To An Internal PDF](https://www.youtube.com/watch?v=sWHcoekPKCU) , [Stack Overflow - Downloadable PDF](https://stackoverflow.com/questions/2906582/how-do-i-create-an-html-button-that-acts-like-a-link)
-
-test
